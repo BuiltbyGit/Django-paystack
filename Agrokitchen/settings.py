@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-s@*psi-9b3wyld)np_io5!f33r6j@5dd$i1y=nb^20kini%&k*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'agrokitchen.herokuapp.com'
+]
 
 
 # Application definition
