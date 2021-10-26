@@ -1,0 +1,86 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#payment-wrapper{
+
+padding: 2em;
+
+box-shadow: 0px 1px 4px 4px #5555552e;
+
+border-radius: .5em;
+
+width: 15em;
+}
+
+h1,
+p,
+div,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.body-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+}
+
+.price-details {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em 0em;
+    border-radius: .5em;
+}
+
+.price-main {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4d769c;
+}
+
+.price-text {
+    font-size: 1rem;
+}
+
+.user-info {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 1em;
+    width: 100%;
+}
+.form-group label{
+    margin-bottom: .6em;
+    font-size: .7rem;
+}
+.form-group input{
+    font-size: 1rem;
+    padding: .5em .5em;
+    border-radius: .2em;
+    border: 1px solid #4d769c;
+    width: 90%;
+}
+.submit-btn{
+    padding: .7em 3em;
+    border: none;
+    border-radius: .2rem;
+    background: #baa8ea;
+    border: 2px solid #5d459e;
+    margin-top: 2em;
+}
