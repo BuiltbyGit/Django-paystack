@@ -14,5 +14,5 @@ def hook(request):
     if request.is_ajax():
         if request.method == 'POST':
             print (request.body)   
-    return HttpResponse("OK")
-    
+            return HttpResponse(request.body)
+    return HttpResponse('Okay')
