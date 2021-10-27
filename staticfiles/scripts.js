@@ -14,6 +14,20 @@ function payWithPaystack(e) {
     callback: function(response){
       let message = 'Payment complete! Reference: ' + response.reference;
       alert(message);
+
+      var myEvent = {id: calEvent.id, start: calEvent.start, end: calEvent.end,
+        allDay: calEvent.allDay };
+      $.ajax({
+      url: '/event/save-json/',
+      type: 'POST',
+      contentType: 'application/json; charset=utf-8',
+      data: $.toJSON(myEvent),
+      dataType: 'text',
+      success: function(result) {
+      alert(result.Result);
+      }
+      });
+
     }
   });
   handler.openIframe();
