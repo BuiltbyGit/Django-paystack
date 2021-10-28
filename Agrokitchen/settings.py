@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-s@*psi-9b3wyld)np_io5!f33r6j@5dd$i1y=nb^20kini%&k*
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'agrokitchen.herokuapp.com'
+    # 'agrokitchen.herokuapp.com'
 ]
 
 
