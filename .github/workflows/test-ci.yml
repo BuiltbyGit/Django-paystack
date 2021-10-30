@@ -27,6 +27,8 @@ jobs:
         pip install pipenv
         pipenv sync
     - name: Run Tests
-      run: |
-        pipenv shell
-        python manage.py test
+      with:
+        path: /home/runner/.local/share/virtualenvs/Django-paystack-oJEPTpqm
+        run: |
+          pipenv shell
+          python manage.py test
