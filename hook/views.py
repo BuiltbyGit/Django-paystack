@@ -17,12 +17,6 @@ from .models import paystackreceive
 @require_POST
 @non_atomic_requests
 def hook(request):
-    # return HttpResponse('Transaction successful')
-    # if request.is_ajax():
-    #     if request.method == 'POST':
-    #         print (request.body)   
-    #         return HttpResponse(request.body)
-    # return HttpResponse('Okay')
 
     payload = json.loads(request.body)
     paystackreceive.objects.create(
@@ -30,7 +24,6 @@ def hook(request):
         payload=payload,
     )
     process_webhook_payload(payload)
-    return HttpResponse("Message received okay.", content_type="text/plain")
 
 @atomic
 def process_webhook_payload(payload):
