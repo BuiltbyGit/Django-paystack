@@ -23,9 +23,6 @@ def hook(request):
         received_at=timezone.now(),
         payload=payload,
     )
-    process_webhook_payload(payload)
 
 @atomic
 def process_webhook_payload(payload):
-    # TODO: business logic
-    ...

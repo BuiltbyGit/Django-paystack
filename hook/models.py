@@ -13,6 +13,5 @@ class paystackreceive(models.Model):
         indexes = [
             models.Index(fields=["received_at"]),
         ]
-
-def __str__(self):
-    return self.received_at
+    def __str__(self):
+        return self.received_at
